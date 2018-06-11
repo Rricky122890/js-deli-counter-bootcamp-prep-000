@@ -1,22 +1,24 @@
 var katzDeliLine = [];
 
 
-function takeANumber(katzDeliLine, name) {
+function takeANumber(katzDeliLine) {
 
 
-var i = 0;
-  while (i < katzDeliLine.length) {
-        if (name == katzDeliLine[i]) {
-          return "Welcome, " + name +  ". You are number " + parseInt(i+1) + " in line.";
+// var i = 0;
+//   while (i < katzDeliLine.length) {
+//         if (name == katzDeliLine[i]) {
+//           return "Welcome, " + name +  ". You are number " + parseInt(i+1) + " in line.";
 
-        }
+//         }
 
-        else i++;
+//         else i++;
 
-  }
+//   }
  
- katzDeliLine.push(name);
-return "Welcome, " + name +  ". You are number " + parseInt(i+1) + " in line.";
+ var cust = "";
+ 
+ katzDeliLine.push(cust);
+return "Welcome, " + "customer" +  ". You are number " + katzDeliLine.length + " in line.";
 
 
 }
