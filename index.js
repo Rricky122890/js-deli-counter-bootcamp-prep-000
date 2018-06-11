@@ -15,10 +15,12 @@ function takeANumber(katzDeliLine) {
 
 //   }
  
+ var dailynum = 0;
  var cust = "";
  
  katzDeliLine.push(cust);
-return "Welcome, " + "customer" +  ". You are number " + katzDeliLine.length + " in line.";
+dailynum ++;
+return "Welcome, " + "customer" +  ". You are number " + dailynum + ".";
 
 
 }
@@ -50,6 +52,6 @@ function nowServing(katzDeliLine) {
      return "There is nobody waiting to be served!";
    }
 // else console.log("Currently serving " + katzDeliLine[0] + ".");
-// katzDeliLine.shift(); 
-  return (`Currently serving ${katzDeliLine.shift()}.`)
+ katzDeliLine.shift(); 
+  return (`Currently serving dailynum`)
 } 
